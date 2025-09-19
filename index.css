@@ -1,7 +1,14 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Highlight leading team score */
+.leading {
+  color: #fff;
+  background: #F94F6D;
+  box-shadow: 0 0 16px 4px #F94F6D99;
+  border: 2px solid #fff;
+  font-size: 90px;
+  transition: all 0.2s;
+}
 
 /* Base */
 *{ box-sizing: border-box; }
@@ -10,6 +17,16 @@ body{
   background-color:#F94F6D;
   color:#fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Game title */
+.game-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 /* Two columns */
