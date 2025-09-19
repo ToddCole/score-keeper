@@ -41,7 +41,7 @@ body{
 
 /* Score display */
 .score{
-  font-family:"Verdana", monospace;
+  font-family:"CursedTimer", monospace;
   font-weight:900;
   background:#0a0001;
   color:#F94F6D;
