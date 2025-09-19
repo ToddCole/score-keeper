@@ -1,12 +1,17 @@
 {
-  "name": "Scrim-s04k019",
-  "description": "https://scrimba.com/learn-javascript-c0v/~018/s0q66289b7/head",
+  "name": "basketball-scoreboard",
+  "version": "1.0.0",
+  "description": "A clean, modern basketball scoreboard web application for tracking game scores",
+  "main": "index.html",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
+  "keywords": ["basketball", "scoreboard", "sports", "score-keeper", "web-app"],
+  "author": "ToddCole",
+  "license": "MIT",
   "devDependencies": {
     "vite": "^7.1.6"
   }
