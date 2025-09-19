@@ -1,0 +1,106 @@
+@font-face{
+  font-family:"CursedTimer";
+  src:url("https://cdn.jsdelivr.net/gh/rozacu/CursedTimerULiL@main/CursedTimerULiL.woff") format("woff");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
+/* Base */
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  background-color:#F94F6D;
+  color:#fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Two columns */
+.container{
+  display:flex;
+  justify-content:space-around;
+  align-items:flex-start;
+  gap:40px;
+  padding:40px 20px;
+}
+
+/* Each panel */
+.panel{
+  text-align:center;
+  width:min(360px, 42vw);
+}
+
+/* Team names */
+.teamname{
+  font-size:2rem;            /* ~32px */
+  font-weight:700;
+  letter-spacing:0.25rem;
+  margin:0 0 16px;
+  text-transform:uppercase;
+}
+
+/* Score display */
+.score{
+  font-family:"Verdana", monospace;
+  font-weight:900;
+  background:#0a0001;
+  color:#F94F6D;
+  font-size:80px;
+  width:140px;               /* handles double digits */
+  height:100px;
+  margin:20px auto;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  letter-spacing:2px;
+  text-shadow:0 0 8px rgba(249,79,109,0.6);
+}
+
+/* Buttons row */
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:12px;
+}
+
+/* Buttons */
+.adbut{
+  border:2px solid #fff;
+  background:transparent;
+  color:#fff;
+  padding:8px 14px;
+  font-size:16px;
+  font-weight:700;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background .2s ease, color .2s ease, transform .05s ease;
+}
+.adbut:hover{ background:#fff; color:#F94F6D; }
+.adbut:active{ transform: translateY(1px); }
+
+/* Reset area */
+.reset-container{
+  display:flex;
+  justify-content:center;
+  margin: 0 20px 32px;
+}
+.reset-btn{
+  border:2px solid #fff;
+  background:#d62828;
+  color:#fff;
+  padding:12px 24px;
+  font-size:18px;
+  font-weight:700;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background .2s ease, color .2s ease, transform .05s ease;
+}
+.reset-btn:hover{ background:#fff; color:#d62828; }
+.reset-btn:active{ transform: translateY(1px); }
+
+/* Stack on small screens */
+@media (max-width:640px){
+  .container{ flex-direction:column; align-items:center; }
+  .panel{ width:90%; }
+}
