@@ -1,12 +1,7 @@
 
 
-@font-face {
-  font-family: 'Digital-7';
-  src: url('https://fonts.cdnfonts.com/s/17563/Digital7-rg1m.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 /* Base */
 *{ box-sizing: border-box; }
@@ -43,7 +38,7 @@ body{
 
 /* Score display */
 .score{
-  font-family: 'Digital-7', monospace;
+  font-family: 'Share Tech Mono', monospace;
   font-weight:900;
   background:#0a0001;
   color:#F94F6D;
